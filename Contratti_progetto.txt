@@ -1,0 +1,16 @@
+Contratto effettuaRegistrazione
+Operazione: effettuaRegistrazione()
+Riferimenti caso d'uso: effettuaRegistrazione
+Precondizioni: e' in corso la registrazione di un nuovo Utente u nel Sistema web s
+Postcondizioni:
+	- E' stata creata un'istanza u di Utente (creazione di oggetto)
+	- Gli attributi di u sono stati inizializzati (modifica di attributi)
+	- l'istanza u di Utente e' stata aggiunta nella base di dati del Sistema web s (formazione di collegamento)
+
+Contratto inserisciDatiAccount
+Operazione: inserisciDatiAccount(username: string, password: string)
+Riferimenti caso d'uso: effettuaRegistrazione
+Precondizioni: e' in corso la creazione delle credenziali di acesso al Sistema s di un Utente u
+Postcondizioni:
+	- u.username e' diventato nome (modifica di attributo)
+	- u.password e' diventato password (modifica di attributo)
