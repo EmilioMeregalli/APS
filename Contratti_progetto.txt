@@ -14,16 +14,3 @@ Precondizioni: e' in corso la creazione delle credenziali di acesso al Sistema s
 Postcondizioni:
 	- u.username e' diventato nome (modifica di attributo)
 	- u.password e' diventato password (modifica di attributo)
-
-
-Contratto effettuaAccesso
-Operazione: effettuaAccesso(username: string, password: string)
-Riferimenti caso d'uso: GestisciPacchetto
-Precondizioni: è in corso l'accesso al Sistema s di un Amministratore a
-Postcondizioni: -
-
-Contratto inserisciPacchetto
-Operazione: inserisciPacchetto()
-Riferimenti caso d'uso: GestisciPacchetto
-Precondizioni: l'Amministratore a ha effettuato l'accesso al Sistema s
-Postcondizioni: -
