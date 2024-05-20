@@ -10,7 +10,21 @@ Postcondizioni:
 Contratto inserisciDatiAccount
 Operazione: inserisciDatiAccount(username: string, password: string)
 Riferimenti caso d'uso: effettuaRegistrazione
-Precondizioni: e' in corso la creazione delle credenziali di acesso al Sistema s di un Utente u
+Precondizioni: e' in corso la creazione delle credenziali di accesso al Sistema s di un Utente u
 Postcondizioni:
 	- u.username e' diventato nome (modifica di attributo)
 	- u.password e' diventato password (modifica di attributo)
+
+
+Contratto effettuaAccesso
+Operazione: effettuaAccesso(username: string, password: string)
+Riferimenti caso d'uso: gestisciPacchetto
+Precondizioni: è in corso l'accesso al Sistema s di un Amministratore a
+Postcondizioni: -
+
+Contratto inserimentoPacchetto
+Operazione: inserimentoPacchetto()
+Riferimenti caso d'uso: gestisciPacchetto
+Precondizioni: l'Amministratore a ha effettuato l'accesso al Sistema s
+Postcondizioni: -
+>>>>>>> Stashed changes
