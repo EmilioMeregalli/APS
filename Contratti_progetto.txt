@@ -31,7 +31,18 @@ Precondizioni: e' stato effettuato il pagamento della caparra di una prenotazion
 Postcondizioni:
 	- i dati della prenotazione sono stati salvati sul database di Tips & Travels (modifica di attributi)
 
+Contratto effettuaAccesso
+Operazione: effettuaAccesso(username: string, password: string)
+Riferimenti caso d'uso: gestisciPacchetto
+Precondizioni: è in corso l'accesso al Sistema s di un Amministratore a
+Postcondizioni: -
 
+Contratto inserimentoPacchetto
+Operazione: inserimentoPacchetto()
+Riferimenti caso d'uso: gestisciPacchetto
+Precondizioni: l'Amministratore a ha effettuato l'accesso al Sistema s
+Postcondizioni: -
+>>>>>>> Stashed changes
 
 	
 
