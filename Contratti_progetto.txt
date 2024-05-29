@@ -6,7 +6,7 @@ Precondizioni: e' in corso la registrazione di un nuovo Utente u nel Sistema web
 Postcondizioni:
 	- E' stata creata un'istanza u di Utente (creazione di oggetto)
 	- Gli attributi di u sono stati inizializzati (modifica di attributi)
-	- l'istanza u di Utente e' stata aggiunta nella base di dati del Sistema web s (formazione di collegamento)
+	- l'istanza u di Utente e' stata aggiunta Database db(formazione di collegamento)
 
 Contratto inserisciDatiAccount
 Operazione: inserisciDatiAccount(username: string, password: string)
@@ -31,23 +31,6 @@ Postcondizioni:
 	- è stata creata un'istanza p di Pacchetto (creazione di oggetto)
 	- gli attributi di p sono stati inizializzati (modifica di attributi)
 
-Contratto effettuaRegistrazione
-Operazione: effettuaRegistrazione()
-Riferimenti caso d'uso: effettuaRegistrazione
-Precondizioni: e' in corso la registrazione di un nuovo Utente u nel Sistema web s
-Postcondizioni:
-	- E' stata creata un'istanza u di Utente (creazione di oggetto)
-	- Gli attributi di u sono stati inizializzati (modifica di attributi)
-	- l'istanza u di Utente e' stata aggiunta nella base di dati del Sistema web s (formazione di collegamento)
-
-Contratto inserisciDatiAccount
-Operazione: inserisciDatiAccount(username: string, password: string)
-Riferimenti caso d'uso: effettuaRegistrazione
-Precondizioni: e' in corso la creazione delle credenziali di acesso al Sistema s di un Utente u
-Postcondizioni:
-	- u.username e' diventato nome (modifica di attributo)
-	- u.password e' diventato password (modifica di attributo)
-
 Contratto inserisciDatiPrenotazione
 Operazione: inserisciDatiPrenotazione(CodiceViaggio : int, Soggiorno : string, DataInizio : string, DataFine : string)
 Riferimenti caso d'uso: inserisciPrenotazione
@@ -55,28 +38,15 @@ Precondizioni: e' in corso l'inserimento dei parametri per la prenotazione di un
 Postcondizioni:
 	- è stata creata un'istanza P di Prenotazione (creazione di oggetto)
 	- gli attributi di P sono stati inizializzati con gli attributi di inserisciDatiPrenotazione e un nuovo codice prenotazione (modifica di attributi)
-	- l'istanza P è stata associata all'utente U (formazione di collegamento)
+	- l'istanza P è stata associata al Cliente C (formazione di collegamento)
 
 Contratto inserisciDatiDB
 Operazione: inserisciDatiDB()
 Riferimenti caso d'uso: inserisciPrenotazione
 Precondizioni: e' stato effettuato il pagamento della caparra di una prenotazione
 Postcondizioni:
-	- i dati della prenotazione sono stati salvati sul database di Tips & Travels (modifica di attributi)
+	- i dati della prenotazione sono stati salvati sul database db di Tips & Travels (modifica di attributi)
 
-Contratto effettuaAccesso
-Operazione: effettuaAccesso(username: string, password: string)
-Riferimenti caso d'uso: gestisciPacchetto
-Precondizioni: è in corso l'accesso al Sistema s di un Amministratore a
-Postcondizioni:
-	- è stata creata un'istanza p di Pacchetto (creazione di oggetto)
-	- gli attributi di p sono stati inizializzati (modifica di attributi)
-
-Contratto inserimentoPacchetto
-Operazione: inserimentoPacchetto()
-Riferimenti caso d'uso: gestisciPacchetto
-Precondizioni: l'Amministratore a ha effettuato l'accesso al Sistema s
-Postcondizioni: -
 
 Contratto inserisciDatiRichiestaAssistenza
 Operazione: inserisciDatiRichiestaAssistenza(tipoRichiesta : string)
