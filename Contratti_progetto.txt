@@ -8,8 +8,8 @@ Postcondizioni:
 	- Gli attributi di u sono stati inizializzati (modifica di attributi)
 	- l'istanza u di Utente e' stata aggiunta Database db(formazione di collegamento)
 
-Contratto inserisciDatiAccount
-Operazione: inserisciDatiAccount(username: string, password: string)
+Contratto inserisciDatiCredenziali
+Operazione: inserisciDatiCredenziali(username: string, password: string)
 Riferimenti caso d'uso: effettuaRegistrazione
 Precondizioni: e' in corso la creazione delle credenziali di accesso al Sistema s di un Utente u
 Postcondizioni:
