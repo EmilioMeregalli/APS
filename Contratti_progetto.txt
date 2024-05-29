@@ -8,13 +8,14 @@ Postcondizioni:
 	- Gli attributi di u sono stati inizializzati (modifica di attributi)
 	- l'istanza u di Utente e' stata aggiunta Database db(formazione di collegamento)
 
-Contratto inserisciDatiCredenziali
-Operazione: inserisciDatiCredenziali(username: string, password: string)
+Contratto inserisciDatiCarta
+Operazione: inserisciDatiCarta(numero: string, dataScadenza: string, titolare: string, CVV: string)
 Riferimenti caso d'uso: effettuaRegistrazione
-Precondizioni: e' in corso la creazione delle credenziali di accesso al Sistema s di un Utente u
+Precondizioni: e' in corso l'aggiunta dei dati della carta di pagamento cp associata all'utente u
 Postcondizioni:
-	- u.username e' diventato nome (modifica di attributo)
-	- u.password e' diventato password (modifica di attributo)
+	- E' stata creata un'istanza cp di cartaPagamento (creazione di oggetto)
+	- Gli attributi di cp sono stati inizializzati (modifica di attributi)
+	- l'istanza cp di cartaPagamento e' stata associata ad Utente u(formazione di collegamento)
 
 
 Contratto effettuaAccesso
