@@ -1,0 +1,83 @@
+Nome del caso d’Uso: MonitoraDatiPrenotazione
+
+Portata: Sistema Trips & Travels
+
+Livello: Obiettivo utente
+
+Attore primario: Amministratore
+
+Parti interessate e interessi:
+    -Amministratore: vuole monitorare l'andamento delle prenotazioni per località, tipologia di viaggio e/o di alloggio
+
+Pre-condizioni: L'Amministratore ha effettuato il login al sistema
+
+Post-condizioni: -
+
+Scenario principale di successo:
+   1. Il Sistema mostra un’interfaccia con le varie opzioni;
+   2. L’Amministratore sceglie un’opzione;
+   3. L’Amministratore conclude l’operazione.
+
+Estensioni:
+   2a. Opzione scelta: MonitoraLocalità
+	2a.1 Il Sistema mostra l'elenco di tutte le località disponibili
+	2a.2 L’Amministratore seleziona una località
+	2a.3 Il Sistema mostra una schermata con i dati relativi alla località selezionata
+	2a.4 Si procede col punto 3
+
+   2b. Opzione scelta: MonitoraTipoViaggio
+        2b.1 Il Sistema mostra l'elenco dei tipi di viaggio disponibili: treno, aereo e pullman
+	2b.2 L’Amministratore seleziona un tipo di viaggio
+	2b.3 Il Sistema mostra una schermata con i dati relativi al tipo di viaggio selezionato
+	2b.4 Si procede col punto 3
+
+   2c. Opzione scelta: MonitoraTipoAlloggio
+        2c.1 Il Sistema mostra l'elenco dei tipi di alloggio disponibili: hotel a 3 o 4 stelle
+	2c.2 L’Amministratore seleziona un tipo di alloggio
+	2c.3 Il Sistema mostra una schermata con i dati relativi al tipo di alloggio selezionato
+	2c.4 Si procede col punto 3
+  
+Requisiti speciali:
+   -Interfaccia utente con input da tastiera per l'inserimento dei dati;
+
+Elenco delle varianti tecnologiche e dei dati: - 
+
+Frequenza di ripetizione: ~2 volte a settimana 
+
+Problemi aperti: -
+
+
+
+Nome del caso d’Uso: ProduciReport
+
+Portata: Sistema Trips & Travels
+
+Livello: Obiettivo utente
+
+Attore primario: Amministratore
+
+Parti interessate e interessi:
+    -Amministratore: vuole produrre un report sull'andamento delle prenotazioni
+    -Tour operator: vogliono conoscere l'andamento delle prenotazioni che offrono
+
+Pre-condizioni: L'Amministratore ha effettuato il login al sistema
+
+Post-condizioni: -
+
+Scenario principale di successo:
+   1. Il Sistema mostra l'elenco dei Tour operator;
+   2. L’Amministratore sceglie un Tour operator;
+   3. Il Sistema mostra il catalogo del Tour operator;
+   I passi 4 e 5 si ripete fino a quando l'Amministratore non conclude l'operazione
+   4. L'Amministratore seleziona un pacchetto;
+   5. Il Sistema mostra una schermata con i dati relativi al pacchetto selezionato;
+   6. L'Amministratore conclude l'operazione.
+  
+Requisiti speciali:
+   -Interfaccia utente con input da tastiera per l'inserimento dei dati;
+
+Elenco delle varianti tecnologiche e dei dati: - 
+
+Frequenza di ripetizione: ~2 volte a settimana 
+
+Problemi aperti: -
