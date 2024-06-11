@@ -22,12 +22,14 @@ Principale di Successo:
 1. Il caso d’uso inizia quando l’attore Cliente schiaccia il tasto di modifica di una prenotazione
 2. Il Sistema mostra un form compilato con i dati della prenotazione modificabile
 3. Il Cliente scrive le sue modifiche sul form
-Il Cliente ripete il passo 3 finché non conferma di aver inserito tutti i dati aver terminato l’inserimento 
-4. Il Sistema modifica la prenotazione nel database e notifica via mail il Cliente e l’agenzia di riferimento
+4. Il Cliente salva le modifiche
+5. Il Sistema modifica la prenotazione nel database e notifica via mail il Cliente e l’agenzia di riferimento
+Il Cliente ripete dal passo 3 finché non conferma di aver terminato le modifiche 
+
 Estensioni: 
-4a. Dati inseriti non validi
-	4b.1 Il sistema notifica che i dati inseriti non sono validi 
-	4b.2 Il Cliente corregge i dati e conferma. Si torna al passo 3 
+5a. Dati inseriti non validi
+	5b.1 Il sistema notifica che i dati inseriti non sono validi 
+	5b.2 Il Cliente corregge i dati e conferma. Si torna al passo 3 
 
 
 Requisiti Speciali: 
