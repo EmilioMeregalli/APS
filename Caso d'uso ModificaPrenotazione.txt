@@ -25,6 +25,7 @@ Principale di Successo:
 4. Il Cliente salva le modifiche
 5. Il Sistema modifica la prenotazione nel database e notifica via mail il Cliente e l’agenzia di riferimento
 Il Cliente ripete dal passo 3 finché non conferma di aver terminato le modifiche 
+6. Il Sistema mostra la prenoazione finale modificata
 
 Estensioni: 
 5a. Dati inseriti non validi
