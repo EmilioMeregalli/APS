@@ -81,3 +81,81 @@ Elenco delle varianti tecnologiche e dei dati: -
 Frequenza di ripetizione: ~2 volte a settimana 
 
 Problemi aperti: -
+
+
+
+﻿Nome del caso d’Uso: CancellaPrenotazione
+
+Portata: Sistema Trips & Travels
+
+Livello: Obiettivo Cliente
+
+Attore Primario: Cliente
+
+Parti interessate e interessi: Il Cliente vuole cancellare una prenotazione
+
+Pre-condizioni: Il Cliente deve aver effettuato il login, e avere almeno una prenotazione
+
+Post-condizioni: Viene eliminata la prenotazione e viene inoltrata una richiesta di rimborso a un operatore
+
+Principale di Successo: 
+1. Il caso d’uso inizia quando l’attore Cliente schiaccia il tasto di cancellazione di una prenotazione
+2. Il Sistema mostra una schermata di conferma
+3. Il Cliente conferma
+4. Il Sistema elimina la prenotazione nel database e notifica un Operatore per un eventuale rimborso
+Estensioni: 
+4a. Prenotazione non cancellabile
+	4b.1 Il sistema notifica che la prenotazione non può essere cancellata 
+	4b.2 Il Sistema torna alla schermata di gestione delle prenotazioni 
+
+
+Requisiti Speciali: 
+-Interfaccia utente con input da tastiera per l'inserimento dei dati;
+-Messaggio di avvenuta cancellazione della prenotazione entro 1 minuto il 90% delle volte
+ 
+Elenco delle varianti tecnologiche e dei dati: -
+
+Frequenza di ripetizione: Potrebbe essere quasi ininterrotta
+
+Problemi aperti: Invio richiesta di cancellazione prenotazione ai sistemi esterni (compagnia aerea/ferroviaria, tour operator)
+
+
+
+﻿Nome del caso d’Uso: ModificaPrenotazione
+
+Portata: Sistema Trips & Travels
+
+Livello: Obiettivo Cliente
+
+Attore Primario: Cliente
+
+Parti interessate e interessi: Il Cliente vuole modificare una prenotazione
+
+Pre-condizioni: Il Cliente deve aver effettuato il login, e avere almeno una prenotazione
+
+Post-condizioni: Vengono salvate tutte le modifiche effettuate alla prenotazione
+
+Principale di Successo: 
+1. Il caso d’uso inizia quando l’attore Cliente schiaccia il tasto di modifica di una prenotazione
+2. Il Sistema mostra un form compilato con i dati della prenotazione modificabile
+3. Il Cliente scrive le sue modifiche sul form
+Il Cliente ripete il passo 3 finché non conferma di aver inserito tutti i dati aver terminato l’inserimento 
+4. Il Sistema modifica la prenotazione nel database e notifica via mail il Cliente e l’agenzia di riferimento
+Estensioni: 
+4a. Dati inseriti non validi
+	4b.1 Il sistema notifica che i dati inseriti non sono validi 
+	4b.2 Il Cliente corregge i dati e conferma. Si torna al passo 3 
+
+Requisiti Speciali: 
+-Interfaccia utente con input da tastiera per l'inserimento dei dati;
+-Messaggio di avvenuta modifica della prenotazione entro 1 minuto il 90% delle volte
+ 
+Elenco delle varianti tecnologiche e dei dati: -
+
+Frequenza di ripetizione: Potrebbe essere quasi ininterrotta
+
+Problemi aperti: Invio richiesta di mmodifica prenotazione ai sistemi esterni (compagnia aerea/ferroviaria, tour operator)
+
+
+
+DA QUI AGGIUNGETE GLI ALTRI
