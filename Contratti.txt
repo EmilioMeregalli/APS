@@ -1,0 +1,12 @@
+CONTRATTI OPERAZIONI
+
+
+Scritto da: MATTEO RUSCONI
+Contratto aggiungiDatiAReport
+Operazione: aggiungiDatiAReport(dati : List)
+Riferimenti caso d'uso: ProduciReport
+Precondizioni: è in corso l'inserimento dei Dati d di un catalogo di un tour operator al Report r 
+Postcondizioni:
+	- è stata creata un'istanza d di Dati (creazione di oggetto)
+	- gli attributi di d sono stati inizializzati
+	- l'istanza d è stata associata al Report r (formazione di collegamento)
