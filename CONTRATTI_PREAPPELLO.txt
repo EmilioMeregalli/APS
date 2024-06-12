@@ -23,3 +23,12 @@ Postcondizioni:
 	- Il Cliente crea un'istanza r di recensione su un pacchetto p  (creazione di oggetto)
 	- La recensione r e' stata inserita per l'istanza p di un pacchetto (modifica di attributi)
 	- l'istanza r di p e' stata aggiunta nella base di dati del Sistema web s (formazione di collegamento)
+
+Contratto acquistaCartaPremium
+Operazione: acquistaCartaPremium()
+Rif. Caso d’uso: Obbiettivo Cliente
+Precondizioni: è in corso l’acquisto di una carta fedeltà premium cfp da un Cliente c 
+Postcondizioni: 
+	-Il Sistema s crea un’istanza cfp di carta fedeltà premium (creazione di oggetto)
+	-Gli attributi di cfp sono inizializzati 
+	-L’istanza cfp di è stata associata al Cliente c
