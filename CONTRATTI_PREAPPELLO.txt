@@ -1,0 +1,25 @@
+
+Contratto aggiungiDatiAReport
+Operazione: aggiungiDatiAReport(dati : List)
+Riferimenti caso d'uso: ProduciReport
+Precondizioni: è in corso l'inserimento dei Dati d di un catalogo di un tour operator al Report r 
+Postcondizioni:
+	- è stata creata un'istanza d di Dati (creazione di oggetto)
+	- gli attributi di d sono stati inizializzati
+	- l'istanza d è stata associata al Report r (formazione di collegamento)
+
+Contratto setDatiPrenotazione
+Operazione: setDatiPrenotazione(data: date, numeroPersone: int)
+Riferimenti caso d'uso: ModificaPrenotazione
+Precondizioni: e' in corso la modifica della prenotazione p
+Postcondizioni: 
+	- i dati aggiornati della prenotazione sono stati modificati per l'istanza p di prenotazione(modifica di attributi)
+
+Contratto InserireRecensione
+Operazione: inserisceRecensionePacchetto()
+Riferimenti caso d'uso: InserireRecensione
+Precondizioni: e' in corso l'inserimento di una recensione r su un pacchetto p nel Sistema s
+Postcondizioni:
+	- Il Cliente crea un'istanza r di recensione su un pacchetto p  (creazione di oggetto)
+	- La recensione r e' stata inserita per l'istanza p di un pacchetto (modifica di attributi)
+	- l'istanza r di p e' stata aggiunta nella base di dati del Sistema web s (formazione di collegamento)
