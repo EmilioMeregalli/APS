@@ -1,0 +1,387 @@
+Scritto da: MATTEO RUSCONI
+Nome del caso d’Uso: MonitoraDatiPrenotazione
+
+Portata: Sistema Trips & Travels
+
+Livello: Obiettivo utente
+
+Attore primario: Amministratore
+
+Parti interessate e interessi:
+    -Amministratore: vuole monitorare l'andamento delle prenotazioni per località, tipologia di viaggio e/o di alloggio
+
+Pre-condizioni: L'Amministratore ha effettuato il login al sistema
+
+Post-condizioni: -
+
+Scenario principale di successo:
+   1. Il Sistema mostra un’interfaccia con le varie opzioni;
+   2. L’Amministratore sceglie un’opzione;
+   3. L’Amministratore conclude l’operazione.
+
+Estensioni:
+   2a. Opzione scelta: MonitoraLocalità
+	2a.1 Il Sistema mostra l'elenco di tutte le località disponibili
+	2a.2 L’Amministratore seleziona una località
+	2a.3 Il Sistema mostra una schermata con i dati relativi alla località selezionata
+	2a.4 Si procede col punto 3
+
+   2b. Opzione scelta: MonitoraTipoViaggio
+        2b.1 Il Sistema mostra l'elenco dei tipi di viaggio disponibili: treno, aereo e pullman
+	2b.2 L’Amministratore seleziona un tipo di viaggio
+	2b.3 Il Sistema mostra una schermata con i dati relativi al tipo di viaggio selezionato
+	2b.4 Si procede col punto 3
+
+   2c. Opzione scelta: MonitoraAlloggio
+        2c.1 Il Sistema mostra l'elenco dei tipi degli alloggi disponibili
+	2c.2 L’Amministratore seleziona un alloggio
+	2c.3 Il Sistema mostra una schermata con i dati relativi all'alloggio selezionato
+	2c.4 Si procede col punto 3
+  
+Requisiti speciali:
+   -Interfaccia utente con input da tastiera per l'inserimento dei dati;
+
+Elenco delle varianti tecnologiche e dei dati: - 
+
+Frequenza di ripetizione: ~2 volte a settimana 
+
+Problemi aperti: -
+
+
+Scritto da: MATTEO RUSCONI
+Nome del caso d’Uso: ProduciReport
+
+Portata: Sistema Trips & Travels
+
+Livello: Obiettivo utente
+
+Attore primario: Amministratore
+
+Parti interessate e interessi:
+    -Amministratore: vuole produrre un report sull'andamento delle prenotazioni
+    -Tour operator: vogliono conoscere l'andamento delle prenotazioni che offrono
+
+Pre-condizioni: L'Amministratore ha effettuato il login al sistema
+
+Post-condizioni: -
+
+Scenario principale di successo:
+   1. Il Sistema mostra l'elenco dei Tour operator;
+   2. L’Amministratore sceglie un Tour operator;
+   3. Il Sistema mostra il catalogo del Tour operator;
+   I passi 4, 5, 6 si ripetono fino a quando l'Amministratore non conclude l'operazione
+   4. L'Amministratore seleziona un pacchetto;
+   5. Il Sistema mostra una schermata con i dati relativi al pacchetto selezionato;
+   6. L’Amministratore seleziona i dati di suo interesse e li aggiunge al report;
+   7. L'Amministratore conclude l'operazione.
+
+  
+Requisiti speciali:
+   -Interfaccia utente con input da tastiera per l'inserimento dei dati;
+
+Elenco delle varianti tecnologiche e dei dati: - 
+
+Frequenza di ripetizione: ~2 volte a settimana 
+
+Problemi aperti: -
+
+
+Scritto da: EMILIO MEREGALLI
+﻿Nome del caso d’Uso: CancellaPrenotazione
+
+Portata: Sistema Trips & Travels
+
+Livello: Obiettivo Cliente
+
+Attore Primario: Cliente
+
+Parti interessate e interessi: Il Cliente vuole cancellare una prenotazione
+
+Pre-condizioni: Il Cliente deve aver effettuato il login, e avere almeno una prenotazione
+
+Post-condizioni: Viene eliminata la prenotazione e viene inoltrata una richiesta di rimborso a un operatore
+
+Principale di Successo: 
+1. Il caso d’uso inizia quando l’attore Cliente schiaccia il tasto di cancellazione di una prenotazione
+2. Il Sistema mostra una schermata di conferma
+3. Il Cliente conferma
+4. Il Sistema elimina la prenotazione nel database e notifica un Operatore per un eventuale rimborso
+Estensioni: 
+4a. Prenotazione non cancellabile
+	4b.1 Il sistema notifica che la prenotazione non può essere cancellata 
+	4b.2 Il Sistema torna alla schermata di gestione delle prenotazioni 
+
+
+Requisiti Speciali: 
+-Interfaccia utente con input da tastiera per l'inserimento dei dati;
+-Messaggio di avvenuta cancellazione della prenotazione entro 1 minuto il 90% delle volte
+ 
+Elenco delle varianti tecnologiche e dei dati: -
+
+Frequenza di ripetizione: Potrebbe essere quasi ininterrotta
+
+Problemi aperti: Invio richiesta di cancellazione prenotazione ai sistemi esterni (compagnia aerea/ferroviaria, tour operator)
+
+
+Scritto da: EMILIO MEREGALLI
+﻿Nome del caso d’Uso: ModificaPrenotazione
+
+Portata: Sistema Trips & Travels
+
+Livello: Obiettivo Cliente
+
+Attore Primario: Cliente
+
+Parti interessate e interessi: Il Cliente vuole modificare una prenotazione
+
+Pre-condizioni: Il Cliente deve aver effettuato il login, e avere almeno una prenotazione
+
+Post-condizioni: Vengono salvate tutte le modifiche effettuate alla prenotazione
+
+Principale di Successo: 
+1. Il caso d’uso inizia quando l’attore Cliente schiaccia il tasto di modifica di una prenotazione
+2. Il Sistema mostra un form compilato con i dati della prenotazione modificabile
+3. Il Cliente scrive le sue modifiche sul form
+Il Cliente ripete il passo 3 finché non conferma di aver inserito tutti i dati aver terminato l’inserimento 
+4. Il Sistema modifica la prenotazione nel database e notifica via mail il Cliente e l’agenzia di riferimento
+Estensioni: 
+4a. Dati inseriti non validi
+	4b.1 Il sistema notifica che i dati inseriti non sono validi 
+	4b.2 Il Cliente corregge i dati e conferma. Si torna al passo 3 
+
+Requisiti Speciali: 
+-Interfaccia utente con input da tastiera per l'inserimento dei dati;
+-Messaggio di avvenuta modifica della prenotazione entro 1 minuto il 90% delle volte
+ 
+Elenco delle varianti tecnologiche e dei dati: -
+
+Frequenza di ripetizione: Potrebbe essere quasi ininterrotta
+
+Problemi aperti: Invio richiesta di mmodifica prenotazione ai sistemi esterni (compagnia aerea/ferroviaria, tour operator)
+
+
+Scritto da: ALESSANDRO ROCCHI
+Nome del caso d’Uso: ModificaPreferenzeNotifiche
+
+Portata: Sistema Trips & Travels
+
+Livello: Obiettivo Utente
+
+Attore Primario: Cliente
+
+Parti interessate e interessi: 
+	- Cliente:  vuole essere notificato dal sistema quando vengono inseriti nuovi pacchetti nelle sue localita' di proprio interessi
+
+Pre-condizioni: -
+
+Post-condizioni: Il Cliente viene notificato tramite mail che sono stati inseriti nuovi pacchetti alle localita' di proprio interesse
+
+Principale di Successo: 
+1. Il Cliente accede al Sistema
+2. Il Cliente fa il login 
+3. Il Cliente accede al area riservata per la gestione del suo account
+4. Il Cliente attiva l'opzione di voler essere notificato
+5. Il Cliente salva le modifiche 
+
+Estensioni:
+   4a. Opzione notifiche : Non attivata
+	4a.1 Il sistema notifica l'assenza di recapiti su cui inviare le notifiche
+	4a.2 Il Cliente associa un recapito valido e conferma
+	4a.3 Si torna al punto 4.
+
+Requisiti Speciali: -
+
+Elenco delle varianti tecnologiche e dei dati: Il recapito puo' essere sia un email che un numero di telefono
+
+
+Frequenza di ripetizione: Potrebbe essere ininterrotta
+
+
+Problemi aperti: Se il Cliente non ha recapiti su cui ricevere le notifiche allora non verra' notificato
+
+
+Scritto da: ALESSADRO ROCCHI
+Nome del caso d’Uso: InserireRecensione
+
+Portata: Sistema Trips & Travels
+
+Livello: Obiettivo Utente
+
+Attore primario: Cliente
+
+Parti interessate e interessi:
+    -Cliente: vuole inserire una recensione su un pacchetto precedentemente acquistato
+
+Pre-condizioni: Il cliente deve aver comprato precedentemente almeno un pacchetto 
+
+Post-condizioni: La recensione e' stata inserita correttamente ed e' visibile sull sito web ad altri Clienti
+
+Scenario principale di successo:
+   1. Il Cliente accede al Sistema
+   2. Il Cliente fa il login 
+   3. Il Cliente accede alla sua area riservata
+   4. Il Cliente accede allo storico degli acquisti
+   5. Il Sistema mostra una lista di tutti i pacchetti acquistati precedentemente finora
+   6. Il Cliente seleziona il pacchetto su cui inserire la recensione
+   7. Il Cliente inserisce la recensione
+   8. Il Sistema fa visibile la recensione per tutti gli altri Utenti 
+
+Estensioni:
+   7a. Recensione inappropriata : termini no validi 
+	7a.1 Il Sistema mostra un warning 
+	7a.2 Il Cliente riscrive la recensione in maniera non inappropriata
+	7a.3 Si passa al punto 8
+
+   4b. Storico dei pacchetti acquistati vuoto
+        4b.1 Il Cliente acquista un nuovo pacchetto
+	4b.2 Il Sistema aggiunge il pacchetto appena acquistato nello storico
+	4b.3 Si passa al punto 4
+
+  
+Requisiti speciali:
+   -Interfaccia utente con input da tastiera per l'inserimento della recensione;
+
+Elenco delle varianti tecnologiche e dei dati: - 
+
+Frequenza di ripetizione: 1 volta per pacchetto
+
+Problemi aperti: -
+
+
+Scritto da: GABRIELE STILLO
+Nome del caso d’Uso: AcquistaCarta
+
+Portata: Sistema Trips & Travels
+
+Livello: Obiettivo Cliente
+
+Attore Primario: Cliente
+
+Parti interessate e interessi: Il Cliente vuole acquistare la carta fedeltà
+
+Pre-condizioni: Il Cliente non deve essere già in possesso di una carta fedeltà
+
+Post-condizioni: Viene emessa la carta fedeltà richiesta dall'utente  
+
+Principale di Successo: 
+1. Il Sistema mostra un adv per l'aquisto di una carta fedeltà;
+2. Il Cliente clicca l'adv;
+3. Il Sistema mostra un’interfaccia con le due opzioni;
+4. Il Cliente sceglie un'opzione;
+5. Il Sistema emette la carta fedeltà richiesta.
+
+Estensioni:
+   4a. Opzione scelta: Carta Base
+	4a.1 Il Sistema mostra tutte le funzionalità annesse alla carta selezionata
+	4a.2 Il Cliente conferma l'acquisto della carta Base
+	4a.3 Si procede con punto 5
+
+
+  4b. Opzione scelta: Carta Premium
+	4b.1 Il Sistema mostra tutte le funzionalità annesse alla carta selezionata
+	4b.2 Il Cliente conferma l'acquisto della carta Premium
+	4b.3 Si procede con punto 5
+
+
+Requisiti Speciali: 
+-Interfaccia utente con input da tastiera per l'inserimento dei dati; 
+ 
+Elenco delle varianti tecnologiche e dei dati: Il pagamento della caparra viene effettuato tramite carta di credito
+
+Frequenza di ripetizione: Potrebbe essere quasi ininterrotta
+
+Problemi aperti: -
+
+
+
+Scritto da: GABRIELE STILLO﻿
+Nome del caso d’Uso: AccumulaPunti
+
+Portata: Sistema Trips & Travels
+
+Livello: Obiettivo Cliente 
+
+Attore Primario: Cliente Fedele & Cliente Fedele Plus (che abbrevio per comodità in CF e CFP)
+
+Parti interessate e interessi: Il CF/CFP
+
+Pre-condizioni: Il Cliente deve essere già in possesso di una carta fedeltà
+
+Post-condizioni: Si incrementano i punti ad ogni acquisto di un viaggio da parte del CF/CFP, sulla carta a lui associata  
+
+Principale di Successo: 
+1. Il CF/CFP effettua l'acquisto di un prodotto
+2. Il Sistema rileva la carta fedeltà associata al CF/CFP;
+3. Il Sistema mostra un'interfaccia con punti acquisiti fin'ora e quelli guadagnati con l'ultimo l'acquisto;
+
+Estensioni: -
+
+Requisiti Speciali: -
+ 
+Elenco delle varianti tecnologiche e dei dati: Carta fedeltà elettronica
+
+Frequenza di ripetizione: Potrebbe essere quasi ininterrotta
+
+Problemi aperti: -
+
+
+
+Scritto da: GABRIELE STILLO
+Nome del caso d’Uso: EffettuaPrenotazione - ApplicaScontoPunti
+
+Portata: Sistema Trips & Travels
+
+Livello: Obiettivo Cliente
+
+Attore Primario: Cliente [Cliente Fedele & Cliente Fedele Plus]
+
+Parti interessate e interessi: Il Cliente vuole prenotare un viaggio sfruttando lo sconto con i punti accumulati sulla sua carta fedeltà
+
+Pre-condizioni: Il Cliente deve aver effettuato il login e disporre di una Carta fedeltà con i punti necessari ad applicare lo sconto
+
+Post-condizioni: Viene effettuata la prenotazione applicando uno sconto
+
+Principale di Successo: 
+1. Il Sistema mostra un adv per l'aquisto di una carta fedeltà;
+2. Il Cliente clicca l'adv;
+3. Il Sistema mostra un’interfaccia con le due opzioni;
+4. Il Cliente sceglie un'opzione;
+5. Il Sistema emette la carta fedeltà richiesta
+
+
+Estensioni: 
+   4a. Opzione scelta: Applica sconto punti fedeltà
+	4a.1 Il Sistema rileva la carta fedeltà associata al Cliente loggato
+	4a.2 Il Sistema mostra le tre opzioni di sconto in base ai punti disponibili sulla carta 
+
+		4a.2a.1 Opzione scelta: sconto del 5% sulla caparra SE si ha punti >=10000 e <20000 
+			4a.2a.1a Il Sistema mostra la caparra scontata 
+			4a.2a.1b Il Cliente conferma l'opzione
+			4a.2a.1c Il Sistema reindirizza alla schermata di pagamento
+			4a.2a.1d Si procede con il punto 5
+ 
+		4a.2b.1 Opzione scelta: sconto del 10% SE si ha esattamente 20000 punti
+			4a.2b.1a Il Sistema mostra la caparra scontata 
+			4a.2b.1b Il Cliente conferma l'opzione
+			4a.2b.1c Il Sistema reindirizza alla schermata di pagamento
+			4a.2b.1d Si procede con il punto 5
+
+		4a.2c.1 Opzione scelta: sconto del 15% SE si ha >20000 punti
+			4a.2c.1a Il Sistema mostra la caparra scontata 
+			4a.2c.1b Il Cliente conferma l'opzione
+			4a.2c.1c Il Sistema reindirizza alla schermata di pagamento
+			4a.2c.1d Si procede con il punto 5
+
+
+Requisiti Speciali: 
+-Interfaccia utente con input da tastiera per l'inserimento dei dati;
+-Email di avvenuta prenotazione entro 1 minuto dal pagamento della caparra il 90% delle volte
+ 
+Elenco delle varianti tecnologiche e dei dati: Il pagamento della caparra può essere effettuato tramite carta di credito oppure bonifico
+
+Frequenza di ripetizione: Potrebbe essere quasi ininterrotta 
+
+Problemi aperti: Invio richiesta di prenotazione ai sistemi esterni (compagnia aerea/ferroviaria, tour operator)
+
+
+
