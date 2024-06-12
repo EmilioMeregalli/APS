@@ -1,0 +1,85 @@
+﻿Yo -->  ModificaPreferenzeNotifiche, InserireRecensione
+--------------------
+Nome del caso d’Uso: ModificaPreferenzeNotifiche
+
+Portata: Sistema Trips & Travels
+
+Livello: Obiettivo Utente
+
+Attore Primario: Cliente
+
+Parti interessate e interessi: 
+	- Cliente:  vuole essere notificato dal sistema quando vengono inseriti nuovi pacchetti nelle sue localita' di proprio interessi
+
+Pre-condizioni: -
+
+Post-condizioni: Il Cliente viene notificato tramite mail che sono stati inseriti nuovi pacchetti alle localita' di proprio interesse
+
+Principale di Successo: 
+1. Il Cliente accede al Sistema
+2. Il Cliente fa il login 
+3. Il Cliente accede al area riservata per la gestione del suo account
+4. Il Cliente attiva l'opzione di voler essere notificato
+5. Il Cliente salva le modifiche 
+
+Estensioni:
+   4a. Opzione notifiche : Non attivata
+	4a.1 Il sistema notifica l'assenza di recapiti su cui inviare le notifiche
+	4a.2 Il Cliente associa un recapito valido e conferma
+	4a.3 Si torna al punto 4.
+
+Requisiti Speciali: -
+
+Elenco delle varianti tecnologiche e dei dati: Il recapito puo' essere sia un email che un numero di telefono
+
+
+Frequenza di ripetizione: Potrebbe essere ininterrotta
+
+
+Problemi aperti: Se il Cliente non ha recapiti su cui ricevere le notifiche allora non verra' notificato
+--------------------------------------------------------------------------------------------------------------------
+Nome del caso d’Uso: InserireRecensione
+
+Portata: Sistema Trips & Travels
+
+Livello: Obiettivo Utente
+
+Attore primario: Cliente
+
+Parti interessate e interessi:
+    -Cliente: vuole inserire una recensione su un pacchetto precedentemente acquistato
+
+Pre-condizioni: Il cliente deve aver comprato precedentemente almeno un pacchetto 
+
+Post-condizioni: La recensione e' stata inserita correttamente ed e' visibile sull sito web ad altri Clienti
+
+Scenario principale di successo:
+   1. Il Cliente accede al Sistema
+   2. Il Cliente fa il login 
+   3. Il Cliente accede alla sua area riservata
+   4. Il Cliente accede allo storico degli acquisti
+   5. Il Sistema mostra una lista di tutti i pacchetti acquistati precedentemente finora
+   6. Il Cliente seleziona il pacchetto su cui inserire la recensione
+   7. Il Cliente inserisce la recensione
+   8. Il Sistema fa visibile la recensione per tutti gli altri Utenti 
+
+Estensioni:
+   7a. Recensione inappropriata : termini no validi 
+	7a.1 Il Sistema mostra un warning 
+	7a.2 Il Cliente riscrive la recensione in maniera non inappropriata
+	7a.3 Si passa al punto 8
+
+   4b. Storico dei pacchetti acquistati vuoto
+        4b.1 Il Cliente acquista un nuovo pacchetto
+	4b.2 Il Sistema aggiunge il pacchetto appena acquistato nello storico
+	4b.3 Si passa al punto 4
+
+  
+Requisiti speciali:
+   -Interfaccia utente con input da tastiera per l'inserimento della recensione;
+
+Elenco delle varianti tecnologiche e dei dati: - 
+
+Frequenza di ripetizione: 1 volta per pacchetto
+
+Problemi aperti: -

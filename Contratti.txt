@@ -1,0 +1,8 @@
+Contratto InserireRecensione
+Operazione: inserisceRecensionePacchetto()
+Riferimenti caso d'uso: InserireRecensione
+Precondizioni: e' in corso l'inserimento di una recensione r su un pacchetto p nel Sistema s
+Postcondizioni:
+	- Il Cliente crea un'istanza r di recensione su un pacchetto p  (creazione di oggetto)
+	- La recensione r e' stata inserita per l'istanza p di un pacchetto (modifica di attributi)
+	- l'istanza r di p e' stata aggiunta nella base di dati del Sistema web s (formazione di collegamento)
